@@ -1,0 +1,46 @@
+{
+  "name": "@richpaymentsolutions/react-native-sunmi-payment",
+  "version": "0.0.2",
+  "description": "React Native Android bridge for the Sunmi payment SDK.",
+  "main": "src/index.js",
+  "react-native": "src/index.js",
+  "types": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichPaymentSolutions/react-native-sunmi-payment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RichPaymentSolutions/react-native-sunmi-payment/issues"
+  },
+  "homepage": "https://github.com/RichPaymentSolutions/react-native-sunmi-payment#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "auth:github": "npm whoami --registry=https://npm.pkg.github.com --scope=@richpaymentsolutions",
+    "verify:android": "./gradlew :android:assembleRelease",
+    "publish:github": "npm publish --registry=https://npm.pkg.github.com"
+  },
+  "files": [
+    "android/build.gradle",
+    "android/consumer-rules.pro",
+    "android/src",
+    "core/src",
+    "react-native-bridge/src",
+    "src",
+    "react-native.config.js",
+    "README.md"
+  ],
+  "keywords": [
+    "react-native",
+    "android",
+    "sunmi",
+    "payment",
+    "pos"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-native": ">=0.73"
+  },
+  "packageManager": "bun@1.2.10"
+}
